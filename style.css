@@ -29,6 +29,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #333;
 }
 
 li {
@@ -164,7 +165,7 @@ img {
     padding: 0.5em;
     margin: 0 1em 0.5em 1em;
     float: left;
-    width: 20%; /* Adjusted width for 4 images */
+    width: 20%;
     border: 1px solid #ddd;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -173,6 +174,50 @@ img {
 #news_gallery figcaption {
     font-size: 90%;
     text-align: center;
+}
+
+/* Contact Form Styles */
+#contact {
+    margin: 1em;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Changed to 100% for better responsiveness */
+    max-width: 600px; /* Limit max width */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 95%;
+}
+
+input[type=submit] {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 
 /* Footer Styles */
@@ -215,5 +260,9 @@ footer img {
 
     .news time {
         margin: 0 0 0 1em;
+    }
+
+    input[type=text], input[type=email], select, textarea {
+        width: 100%;
     }
 }
