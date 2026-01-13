@@ -7,6 +7,11 @@
     <meta name="keywords" content="guitars, music, instruments, gallery, fender, gibson, jackson">
     <meta name="author" content="Six String House">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -14,18 +19,16 @@
 </head>
 <body>
     <header>
-        <div class="hero-image"></div>
+        <div class="hero-image" style="height: 200px;"></div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="about-us.html">About</a>
+            <a href="gallery.html" class="active">Gallery</a>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <h1>Gallery</h1>
         <div id="gallery">
             <figure>
@@ -76,10 +79,30 @@
                 </a>
                 <figcaption>Jackson Soloist - The ultimate shredder's guitar.</figcaption>
             </figure>
+            <figure>
+                <a href="view-image.html?src=img/gitare/jackson/f4.PNG" target="_blank">
+                    <img src="img/gitare/jackson/f4.PNG" alt="Jackson Warrior" title="Jackson Warrior">
+                </a>
+                <figcaption>Jackson Warrior - Aggressive shape for an aggressive sound.</figcaption>
+            </figure>
+            <figure>
+                <a href="view-image.html?src=img/gitare/jackson/b4.PNG" target="_blank">
+                    <img src="img/gitare/jackson/b4.PNG" alt="Jackson Rhoads" title="Jackson Rhoads">
+                </a>
+                <figcaption>Jackson Rhoads - An icon of metal design and performance.</figcaption>
+            </figure>
         </div>
     </main>
     <footer>
-        <p>Copyright &copy; 2026 Six String House. <a href="https://github.com/Meowth-hihi/Six-String-House/"><img src="img/icon/github.svg" title="Github" alt="Github"></a> <a href="https://www.reddit.com/" target="_blank"><img src="img/icon/reddit.svg" alt="Reddit" title="Reddit"></a> <a href="https://stackoverflow.com/" target="_blank"><img src="img/icon/stack-overflow.svg" alt="Stack Overflow" title="Stack Overflow"></a> <a href="https://www.youtube.com/" target="_blank"><img src="img/icon/youtube.svg" alt="YouTube" title="YouTube"></a></p>
+        <div class="container">
+            <p>Copyright &copy; 2025 Six String House.</p>
+            <div class="social-icons">
+                <a href="https://github.com/Meowth-hihi/Six-String-House/" target="_blank"><img src="img/icon/github.svg" alt="GitHub" title="GitHub"></a>
+                <a href="https://www.reddit.com/" target="_blank"><img src="img/icon/reddit.svg" alt="Reddit" title="Reddit"></a>
+                <a href="https://stackoverflow.com/" target="_blank"><img src="img/icon/stack-overflow.svg" alt="Stack Overflow" title="Stack Overflow"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="img/icon/youtube.svg" alt="YouTube" title="YouTube"></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

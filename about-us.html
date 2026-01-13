@@ -7,6 +7,11 @@
     <meta name="keywords" content="guitars, music, instruments, about us, our story">
     <meta name="author" content="Six String House">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -14,18 +19,16 @@
 </head>
 <body>
     <header>
-        <div class="hero-image"></div>
+        <div class="hero-image" style="height: 200px;"></div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="about-us.html" class="active">About</a>
+            <a href="gallery.html">Gallery</a>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <h1>About Us</h1>
         <div class="about-us-container">
             <div class="video-container">
@@ -38,13 +41,20 @@
                 <h2>Our Passion for Guitars</h2>
                 <p>Welcome to Six String House, your home for the finest guitars and musical gear. Our journey began with a simple passion: a love for the craftsmanship, the sound, and the soul of a great guitar. We believe that a guitar is more than just an instrument; it's a partner in your musical journey, a tool for expression, and a piece of art.</p>
                 <p>Founded by a group of dedicated musicians and collectors, Six String House was born out of a desire to create a place where players of all levels could find their perfect instrument. We travel the world to hand-pick every guitar in our collection, ensuring that each one meets our high standards of quality, playability, and tone.</p>
-                <p>Our mission is to connect musicians with the instruments of their dreams. Whether you're a seasoned professional looking for a vintage masterpiece or a beginner searching for your first quality guitar, our knowledgeable team is here to guide you. We pride ourselves on our expertise and our commitment to customer satisfaction.</p>
-                <p>At Six String House, we don't just sell guitars. We live and breathe them. We invite you to explore our collection, read our stories, and become part of our community. Thank you for letting us be a part of your musical story.</p>
+                <p>Our mission is to connect musicians with the instruments of their dreams. Whether you're a seasoned professional looking for a vintage masterpiece or a beginner searching for your first quality guitar, our knowledgeable team is here to guide you.</p>
             </div>
         </div>
     </main>
     <footer>
-        <p>Copyright &copy; 2026 Six String House. <a href="https://github.com/Meowth-hihi/Six-String-House/"><img src="img/icon/github.svg" title="Github" alt="Github"></a> <a href="https://www.reddit.com/" target="_blank"><img src="img/icon/reddit.svg" alt="Reddit" title="Reddit"></a> <a href="https://stackoverflow.com/" target="_blank"><img src="img/icon/stack-overflow.svg" alt="Stack Overflow" title="Stack Overflow"></a> <a href="https://www.youtube.com/" target="_blank"><img src="img/icon/youtube.svg" alt="YouTube" title="YouTube"></a></p>
+        <div class="container">
+            <p>Copyright &copy; 2025 Six String House.</p>
+            <div class="social-icons">
+                <a href="https://github.com/Meowth-hihi/Six-String-House/" target="_blank"><img src="img/icon/github.svg" alt="GitHub" title="GitHub"></a>
+                <a href="https://www.reddit.com/" target="_blank"><img src="img/icon/reddit.svg" alt="Reddit" title="Reddit"></a>
+                <a href="https://stackoverflow.com/" target="_blank"><img src="img/icon/stack-overflow.svg" alt="Stack Overflow" title="Stack Overflow"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="img/icon/youtube.svg" alt="YouTube" title="YouTube"></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
