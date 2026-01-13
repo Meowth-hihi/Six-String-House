@@ -1,5 +1,5 @@
 body, html {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -68,7 +68,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     background-color: white;
-    min-height: 600px; /* Added min-height to push footer down if content is short */
+    min-height: 600px;
 }
 
 main a {
@@ -118,6 +118,34 @@ img {
     display: block;
 }
 
+/* News Styles */
+.news img {
+    width: 12%;
+    float: left;
+    padding: 0.5em;
+    margin: 0 1em 0.5em 0.5em;
+    border: 1px solid #ddd; /* Added border to match figure style */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added shadow */
+}
+
+.news h2 {
+    margin: 0.5em 0.7em;
+    font-size: 1.5em;
+    color: #27318b;
+}
+
+.news hr {
+    margin: 1em;
+    border: 1px dotted #27318b;
+    clear: both;
+}
+
+.news time {
+    font-size: 90%;
+    font-style: italic;
+    color: #777;
+}
+
 /* Footer Styles */
 footer {
     background-color: #333;
@@ -147,5 +175,16 @@ footer img {
 
     .hero-image {
         height: 300px;
+    }
+
+    .news img {
+        width: 95%;
+        padding: 0.5em;
+        margin: 0 1em 0.5em 0.5em;
+        float: none; /* Stack image on mobile */
+    }
+
+    .news time {
+        margin: 0 0 0 1em;
     }
 }
