@@ -29,7 +29,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
 }
 
 li {
@@ -52,15 +51,24 @@ li a:hover {
 }
 
 /* Main Content Styles */
-h1, h2 {
+h1, h2, h3 {
     margin: 0.5em;
-    font-size: 2em;
     color: #333;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 h2 {
     font-size: 1.5em;
     color: #27318b;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 1em;
 }
 
 main {
@@ -124,8 +132,8 @@ img {
     float: left;
     padding: 0.5em;
     margin: 0 1em 0.5em 0.5em;
-    border: 1px solid #ddd; /* Added border to match figure style */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Added shadow */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .news h2 {
@@ -144,6 +152,27 @@ img {
     font-size: 90%;
     font-style: italic;
     color: #777;
+}
+
+.description {
+    font-weight: bold;
+    margin: 0.8em 1em 1.5em 1em;
+}
+
+/* News Gallery Styles (for individual news pages) */
+#news_gallery figure {
+    padding: 0.5em;
+    margin: 0 1em 0.5em 1em;
+    float: left;
+    width: 20%; /* Adjusted width for 4 images */
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#news_gallery figcaption {
+    font-size: 90%;
+    text-align: center;
 }
 
 /* Footer Styles */
@@ -167,7 +196,7 @@ footer img {
 
 /* Responsive Design */
 @media screen and (max-width: 900px) {
-    figure {
+    figure, #news_gallery figure {
         width: 90%;
         margin: 1em auto;
         float: none;
@@ -181,7 +210,7 @@ footer img {
         width: 95%;
         padding: 0.5em;
         margin: 0 1em 0.5em 0.5em;
-        float: none; /* Stack image on mobile */
+        float: none;
     }
 
     .news time {
